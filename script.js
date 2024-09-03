@@ -1,52 +1,62 @@
-// // Get the DOM elements
-// const arraySpan = document.getElementById("array");
-// const minSpan = document.getElementById("min");
+let inputs = document.getElementById("inp")
+let text = document.querySelector(".text")
 
-// function findMin(arr) {
-//     return Math.min(...arr);
-// }
-
-// // Parse the array from the text content
-// const arrayText = arraySpan.textContent.trim();
-// const arr = JSON.parse(arrayText);
-
-// // Find the smallest number
-// const smallestNumber = findMin(arr);
-
-// // Update the DOM elements
-// minSpan.textContent = smallestNumber;
-
-
-
-
-// function totlaVal(str) {
-//     return str.length;
-// }
-
-
-// const stringSpan = document.getElementById('string');
-// const totalSpan = document.getElementById('total');
-
-
-// const string = stringSpan.textContent;
-
-// const totalChar = totlaVal(string);
-
-
-// totalSpan.textContent = totalChar;
-
-const stringSpan = document.getElementById('origStr')
-const TitleSpan = document.getElementById('TitStr')
-
-function TitleCase(str) {
-    return str.toLowerCase()
-              .split(' ')
-              .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-              .join(' ');
+function Add(){
+    if (inputs.value === "") {
+        alert ("Please enter yout task here!")
+    } else {
+        let newEle = document.createElement("ul")
+        newEle.innerHTML = `${inputs.value}`
+        text.appendChild(newEle)
+        inputs.value = ""
+    }
 }
 
-const string = stringSpan.textContent;
 
-const title = TitleCase(string);
+let calInputs1 = document.getElementById("input1")
+let calInputs2 = document.getElementById("input2")
+let result = document.querySelector(".result")
 
-TitleSpan.textContent = title;
+
+
+function calc() {
+    let num1 = Number(calInputs1.value)
+    let num2 = Number(calInputs2.value)
+
+
+    if (calInputs1 === "" || calInputs2 === "") {
+        alert ("please fill both inputs")
+    } else {
+      let sum =  num1 + num2
+        result.value = sum
+         calInputs1= ""
+         calInputs2= ""
+    }
+}
+
+
+let textInput = document.getElementById("textInput");
+let resultStr = document.querySelector(".resultStr");
+
+function StrTotal() {
+    
+    let str = textInput.value;
+    let StrTot = str.length;
+    resultStr.value = StrTot;
+    textInput.value = "";
+}
+
+
+let Stringtext = document.getElementById("Stringtext");
+let resultTitle = document.querySelector(".resultTitle");
+
+function TitleCase() {
+    let text = Stringtext.value.toLowerCase()
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+
+  
+    resultTitle.value = text;
+    Stringtext.value = "";
+}

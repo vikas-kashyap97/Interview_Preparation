@@ -4,22 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            gap: 10px;
+        }
+        .todo{
+            border: 1px solid black;
+            border-width: 5px;
+            width: 200px;
+            text-align: center;
+            padding: 0 0 10px 0;
+        }
+        #inp{
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+        #calbut{
+                margin: 10px;
+            }
+            #totbtn{
+                margin: 31px;
+            }
+    </style>
 </head>
 <body>
+    
+    <div>
+        <h1>Multitask App</h1>
+        <h3>In this app you can add Todo, calculate the digits, get the total number of entered string, convert a string to titlecase, remove duplicate numbers find the common number between two arrays, check the number is Even or Odd</h3>
+    </div>
+    <div class="main">
+    <div class="todo">
+        <div >
+            <h1>Todo App</h1>
+            <div>
+                <input type="text" placeholder="Enter your task here!" id="inp">
+                <button onclick="Add()">Add</button>
+            </div>
+        </div>
+        <div class="text"></div>
+    </div>
 
-    <!-- <h1>Find the smallest number</h1>
-    <p>Array: <span id="array">[4, 9, 8, 387, 945, 7, 541679, 312, 34, 98, 65, 749, 565, 98956, 689, 5698, 5467, 84, 59, 56, 87]
-    </span></p>
-    <p>Smallest Number: <span id="min">[ ]</span></p> -->
 
-    <!-- <h1>fint the total charatcters</h1>
-    <p>String: <span id="string">"This is Vikas Kashyap and I'm a Frontend Developer."</span></p>
-    <p>total words: <span id="total"></span></p> -->
+    <div class="todo">
+        <h1>ADD</h1>
+        <div>
+            <input id="input1" type="text" placeholder="Enter first number">
+            <h3>+</h3>
+            <input id="input2" type="text" placeholder="Enter second number"></br>
+            <button id="calbut" onclick="calc()">=</button></br>
+            <input type="text" class="result" placeholder="Result" readonly>
+        </div>
+    </div>
 
-    <h1>Convert string to Title Case</h1>
-    <p>Original string: <span id="origStr">this is vikas kashyap</span></p>
-    <p>Title string: <span id="TitStr"></span></p>
+    <div class="todo">
+        <h1>Total Number of Characters</h1>
+        <div>
+            <input id="textInput" type="text" placeholder="Type your data here!">
+            <button id="totbtn" onclick="StrTotal()">Total</button>
+            <input class="resultStr" type="text" placeholder="Result" readonly>
+        </div>
+    </div>
 
+    <div class="todo">
+        <h1>Convert a string to Titlecase</h1>
+        <input id="Stringtext" type="text" placeholder="Type your data here!">
+        <button onclick="TitleCase()">Convert</button>
+        <input type="text" class="resultTitle" placeholder="Result" readonly>
+    </div>
+    
+    
+    
+</div>
+        
+   
 
     <script src="script.js"></script>
 </body>

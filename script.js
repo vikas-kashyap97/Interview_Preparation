@@ -60,3 +60,4 @@ function TitleCase() {
     resultTitle.value = text;
     Stringtext.value = "";
 }
+

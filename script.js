@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let inputs = document.getElementById("inp")
 let text = document.querySelector(".text")
 
@@ -60,4 +61,3 @@ function TitleCase() {
     resultTitle.value = text;
     Stringtext.value = "";
 }
-

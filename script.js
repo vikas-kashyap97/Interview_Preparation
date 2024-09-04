@@ -41,9 +41,8 @@ let resultStr = document.querySelector(".resultStr");
 
 function StrTotal() {
     
-    let str = textInput.value;
-    let StrTot = str.length;
-    resultStr.value = StrTot;
+    let str = textInput.value.length;
+    resultStr.value = str;
     textInput.value = "";
 }
 

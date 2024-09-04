@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 let inputs = document.getElementById("inp")
 let text = document.querySelector(".text")
 
@@ -62,3 +62,46 @@ function TitleCase() {
     Stringtext.value = "";
 }
 
+let numInput1 = document.getElementById("comm1");
+let numInput2 = document.getElementById("comm2");
+let resultInput = document.querySelector(".resultComm");
+
+function RemoveDuplicates() {
+    let num1 = numInput1.value;
+    let num2 = numInput2.value;
+
+    if (num1 === "" || num2 === "") {
+        alert("Please fill both inputs");
+    } else {
+       
+        let arr1 = num1.split(",").map(Number);
+        let arr2 = num2.split(",").map(Number);
+
+        
+        let combineArray = [...arr1, ...arr2];
+        let uniqueArray = [...new Set(combineArray)];
+
+        
+        resultInput.value = uniqueArray.join(", ");
+
+      
+        numInput1.value = "";
+        numInput2.value = "";    
+    }
+}
+
+let numInpuut = document.getElementById("evod")
+let resultInput2 = document.querySelector(".resultEvod");
+
+function EvenOdd(){
+
+    let number = Number(numInpuut.value)
+
+    if (number % 2 === 0) {
+        resultInput2.value =  "Even"
+    } else {
+        resultInput2.value =  "Odd"
+    }
+}
+
+     

@@ -1,33 +1,10 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    <style>
-        .main{
-            display: flex;
-            gap: 10px;
-        }
-        .todo{
-            border: 1px solid black;
-            border-width: 5px;
-            width: 200px;
-            text-align: center;
-            padding: 0 0 10px 0;
-        }
-        #inp{
-            padding: 10px;
-            margin-bottom: 5px;
-        }
-        #calbut{
-                margin: 10px;
-            }
-            #totbtn{
-                margin: 31px;
-            }
-    </style>
 </head>
 <body>
     
@@ -71,10 +48,24 @@
     <div class="todo">
         <h1>Convert a string to Titlecase</h1>
         <input id="Stringtext" type="text" placeholder="Type your data here!">
-        <button onclick="TitleCase()">Convert</button>
+        <button id="titlecase" onclick="TitleCase()">Convert</button>
         <input type="text" class="resultTitle" placeholder="Result" readonly>
     </div>
+
+    <div class="todo">
+        <h1>Remove Duplicate Numbers</h1>
+        <input id="comm1" type="text" placeholder="Type Your number!">
+        <input id="comm2" type="text" placeholder="Type Your number!">
+        <button id="commbtn" onclick="RemoveDuplicates()">Remove</button>
+        <input type="text" class="resultComm" placeholder="Result" readonly>
+    </div>
     
+    <div class="todo">
+        <h1>Even or Odd</h1>
+        <input id="evod" type="number" placeholder="Type your number!">
+        <button id="evodbtn" onclick="EvenOdd()">Check</button>
+        <input type="text" class="resultEvod" placeholder="Result" readonly>
+    </div>
     
     
 </div>
@@ -85,32 +76,5 @@
 </body>
 </html>
 
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
-    <!-- <h1>Find the smallest number</h1>
-    <p>Array: <span id="array">[4, 9, 8, 387, 945, 7, 541679, 312, 34, 98, 65, 749, 565, 98956, 689, 5698, 5467, 84, 59, 56, 87]
-    </span></p>
-    <p>Smallest Number: <span id="min">[ ]</span></p> -->
-
-    <!-- <h1>fint the total charatcters</h1>
-    <p>String: <span id="string">"This is Vikas Kashyap and I'm a Frontend Developer."</span></p>
-    <p>total words: <span id="total"></span></p> -->
-
-    <h1>Convert string to Title Case</h1>
-    <p>Original string: <span id="origStr">this is vikas kashyap</span></p>
-    <p>Title string: <span id="TitStr"></span></p>
 
 
-    <script src="script.js"></script>
-</body>
-</html>
-
->>>>>>> 8209de073788cf232911057c238958fa5ed724ac

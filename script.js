@@ -1,4 +1,3 @@
-
 let inputs = document.getElementById("inp")
 let text = document.querySelector(".text")
 
@@ -12,7 +11,7 @@ function Add(){
         inputs.value = ""
     }
 }
-
+// **************************************************************
 
 let calInputs1 = document.getElementById("input1")
 let calInputs2 = document.getElementById("input2")
@@ -35,6 +34,7 @@ function calc() {
     }
 }
 
+// ***************************************************************
 
 let textInput = document.getElementById("textInput");
 let resultStr = document.querySelector(".resultStr");
@@ -47,6 +47,7 @@ function StrTotal() {
     textInput.value = "";
 }
 
+// ***************************************************************
 
 let Stringtext = document.getElementById("Stringtext");
 let resultTitle = document.querySelector(".resultTitle");
@@ -61,6 +62,9 @@ function TitleCase() {
     resultTitle.value = text;
     Stringtext.value = "";
 }
+
+// ***************************************************************
+
 
 let numInput1 = document.getElementById("comm1");
 let numInput2 = document.getElementById("comm2");
@@ -89,6 +93,9 @@ function RemoveDuplicates() {
         numInput2.value = "";    
     }
 }
+
+// ***************************************************************
+
 
 let numInpuut = document.getElementById("evod")
 let resultInput2 = document.querySelector(".resultEvod");

@@ -1,13 +1,17 @@
-let inputs = document.getElementById('inp');
-let text = document.querySelector(".text")
+let input = document.getElementById("InputText");
+let result = document.querySelector(".text");
 
-function Add(){
-    if(inputs.value == ""){
-        alert("Please Enter Your Task")
+function Submit() {
+    if (input.value === "") {
+        alert("Please enter your task!");
     } else {
-        let newEle = document.createElement("ul");
-        newEle.innerHTML= `${inputs.value}`;
-        text.appendChild(newEle);
-        inputs.value = "";
-    }  
+        let newEl = document.createElement("li");
+        newEl.innerHTML = `${input.value} <button onclick="Delete(this)">Delete</button>`;
+        result.appendChild(newEl);
+        input.value = "";
+    }
+}
+
+function Delete(element) {
+    element.parentElement.remove();
 }

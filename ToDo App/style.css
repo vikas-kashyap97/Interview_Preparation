@@ -1,0 +1,10 @@
+.main{
+    border: 5px solid black;
+    width: 200px;
+}
+#todo{
+    text-align: center;
+}
+#btn{
+    margin: 10px;
+}

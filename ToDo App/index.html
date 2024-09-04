@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo App</title>
+    <title>ToDo app</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>ToDo App</h1>
-        <div>
-            <input type="text" placeholder="Enter your task" id="inp">
-            <button onclick="Add()">Add</button>
-        </div>
-        <div class="text">
+    <div class="main">
+        <div id="todo">
+            <h1>ToDo app</h1>
+            <input type="text" id="InputText" placeholder="Type Your Text Here!">
+            <button id="btn" onclick="Submit()">Submit Task</button>
             
         </div>
+        <div class="text"></div>
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>

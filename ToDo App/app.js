@@ -11,7 +11,6 @@ function Submit() {
         input.value = "";
     }
 }
-
 function Delete(element) {
     element.parentElement.remove();
 }

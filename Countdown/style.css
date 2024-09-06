@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #9e9d9d;
+}
+.timer-container {
+    text-align: center;
+    border: 5px solid rgb(2, 80, 52);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#display {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+input, button {
+    padding: 10px;
+    font-size: 1rem;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+input[type="number"] {
+    width: 82px;
+}

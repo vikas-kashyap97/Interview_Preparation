@@ -15,3 +15,4 @@ function Submit() {
 function Delete(element) {
     element.parentElement.remove();
 }
+

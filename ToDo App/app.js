@@ -44,7 +44,14 @@ function Submit(){
         inputs.value = ""
     }
 }
+<<<<<<< HEAD
 
 function Delete(element){
     element.parentElement.remove()
 }
+=======
+function Delete(element) {
+    element.parentElement.remove();
+}
+
+>>>>>>> 1d881106e690b1fd02541775cfa92e509aff63ef

@@ -18,22 +18,21 @@
 
     <script>
 
-        let inputs = document.getElementById("InputText")
-        let results = document.querySelector(".text")
+        let inputs = document.getElementById("InputText");
+        let result = document.querySelector(".text")
 
         function Submit(){
             if (inputs.value === "") {
-                alert ("Please add your todo here!")
+                alert ("Please Fill The Input Area!")
             } else {
-                let newElement = document.createElement("li")
-                newElement.innerHTML = `${inputs.value}  <button onclick=Delete(this)>Delete</button>`
-                results.appendChild(newElement)
-                inputs.value =""
+              let  newElement = document.createElement("li")
+              newElement.innerHTML = `${inputs.value} <button onclick=Delete(this)>Delete</button>`
+              result.appendChild(newElement)
+              inputs.value = ""
             }
         }
-
-        function Delete(ele){
-            ele.parentElement.remove()
+        function Delete(element){
+            element.parentElement.remove()
         }
     </script>
 </body>

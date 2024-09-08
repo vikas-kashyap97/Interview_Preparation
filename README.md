@@ -7,4 +7,5 @@
 4. Change the first letter into Titlecase</br>
 5.Remove Duplicate Numbers</br>
 6.Even or Odd</br>
-7.Countdown Timer
+7.Countdown Timer</br>
+8. API Call

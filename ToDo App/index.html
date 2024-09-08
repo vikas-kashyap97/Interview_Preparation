@@ -16,6 +16,25 @@
         <div class="text"></div>
     </div>
 
-    <script src="app.js"></script>
+    <script>
+
+        let inputs = document.getElementById("InputText")
+        let results = document.querySelector(".text")
+
+        function Submit(){
+            if (inputs.value === "") {
+                alert ("Please add your todo here!")
+            } else {
+                let newElement = document.createElement("li")
+                newElement.innerHTML = `${inputs.value}  <button onclick=Delete(this)>Delete</button>`
+                results.appendChild(newElement)
+                inputs.value =""
+            }
+        }
+
+        function Delete(ele){
+            ele.parentElement.remove()
+        }
+    </script>
 </body>
 </html>

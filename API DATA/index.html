@@ -7,13 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <h1>Data from API</h1>
-        <div id="main">
-          <div id="name"><h3>Name:</h3></div>
-          <div id="email"><h3>Emails:</h3></div>
-        </div>
-      </div>
-    <script src="index.js"></script>
+  
+   <div>
+    <h1>Data From API</h1>
+    <div id="main">
+    <div id="name">Name:</div>
+    <div id="emails">Emails:</div>
+   </div>
+  </div>
+    <script>
+
+
+   let API = "https://jsonplaceholder.typicode.com/users"
+   let nameContainer = document.getElementById("name")
+   let emailContainer = document.getElementById("emails")
+    
+   function collectData(){
+    fetch(API)
+    .then(response => response.json())
+    .then(data => {
+
+      data.forEach(user => {
+        nameContainer.innerHTML += `<li>${user.name}</li>`
+        emailContainer.innerHTML += `<li>${user.email}</li>`
+      })
+    });
+   }
+        collectData()
+    </script>
 </body>
 </html>
